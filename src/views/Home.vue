@@ -1,12 +1,11 @@
-<!-- src/views/Home.vue -->
+<script setup>
+import MainLayout from '@/layouts/MainLayout.vue'
+import HelloWorld from '@/components/GreetingsMain.vue';
+</script>
 <template>
-    <div>
-      <h1>Home Page</h1>
-      <router-link to="/tasks">Go to TaskList</router-link>
-    </div>
-  </template>
-  
-  <script>
-  export default {};
-  </script>
-  
+  <MainLayout>
+    <HelloWorld />
+  </MainLayout>
+</template>
+
+
